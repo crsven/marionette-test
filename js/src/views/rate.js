@@ -1,6 +1,6 @@
-(function(ProsperApplication, M, B, W) {
+(function(LoanApplication, M, B, W) {
 
-  ProsperApplication.views.Rate = M.ItemView.extend({
+  LoanApplication.views.Rate = M.ItemView.extend({
     "tagName": "li",
     "template": (function() {
       var t;
@@ -13,4 +13,4 @@
     }()),
   });
 
-}(window.ProsperApplication, Backbone.Marionette, Backbone, Backbone.Wreqr));
+}(window.LoanApplication, Backbone.Marionette, Backbone, Backbone.Wreqr));

@@ -1,11 +1,11 @@
-(function(ProsperApplication, M) {
+(function(LoanApplication, M) {
 
-  ProsperApplication.views.AppLayout = Marionette.Layout.extend({
+  LoanApplication.views.AppLayout = Marionette.Layout.extend({
     "className": "content",
     "onRender": function() {
-      this.appForm.show(new ProsperApplication.views.FormFields());
-      console.log(ProsperApplication.views);
-      this.appRates.show(new ProsperApplication.views.Rates());
+      this.appForm.show(new LoanApplication.views.FormFields());
+      console.log(LoanApplication.views);
+      this.appRates.show(new LoanApplication.views.Rates());
     },
     "regions": {
       "appForm": "section[data-region='form']",
@@ -19,4 +19,4 @@
     }()),
   });
 
-}(window.ProsperApplication, Backbone.Marionette));
+}(window.LoanApplication, Backbone.Marionette));

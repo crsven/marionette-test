@@ -1,6 +1,6 @@
-(function(ProsperApplication, M) {
+(function(LoanApplication, M) {
 
-  ProsperApplication.AppRouter = M.AppRouter.extend({
+  LoanApplication.AppRouter = M.AppRouter.extend({
     "appRoutes": {
     },
     "initialize": function() {
@@ -9,4 +9,4 @@
     }
   });
 
-}(window.ProsperApplication, Backbone.Marionette));
+}(window.LoanApplication, Backbone.Marionette));

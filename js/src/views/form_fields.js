@@ -1,6 +1,6 @@
-(function(ProsperApplication, M, B) {
+(function(LoanApplication, M, B) {
 
-  ProsperApplication.views.FormFields = M.CompositeView.extend({
+  LoanApplication.views.FormFields = M.CompositeView.extend({
     "events": {
       "submit": "_onSubmit"
     },
@@ -13,7 +13,7 @@
         "name": "last_name"
       }]);
     },
-    "itemView": ProsperApplication.views.FormField,
+    "itemView": LoanApplication.views.FormField,
     "itemViewContainer": "#apply-form",
     "template": (function() {
       var t;
@@ -35,11 +35,11 @@
       }, {});
       $.post($form.attr('action'), serializedData)
         .done(function(response){
-          ProsperApplication.app.vent.trigger('rates:received', response);
+          LoanApplication.app.vent.trigger('rates:received', response);
         }).fail(function(error) {
           console.log('error');
         });
     },
   });
 
-}(window.ProsperApplication, Backbone.Marionette, Backbone));
+}(window.LoanApplication, Backbone.Marionette, Backbone));

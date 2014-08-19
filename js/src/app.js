@@ -1,15 +1,15 @@
-(function(ProsperApplication, M, B) {
+(function(LoanApplication, M, B) {
 
   var app, layout, router, controller;
 
   app    = new M.Application(),
-  layout = new ProsperApplication.views.AppLayout();
+  layout = new LoanApplication.views.AppLayout();
 
   app.addRegions({
     "content": "#main"
   });
 
-  router = new ProsperApplication.AppRouter({});
+  router = new LoanApplication.AppRouter({});
 
   app.addInitializer(function() {
     this.content.show(layout);
@@ -19,6 +19,6 @@
     Backbone.history.start();
   });
 
-  ProsperApplication.app = app;
+  LoanApplication.app = app;
 
-}(window.ProsperApplication, Backbone.Marionette, Backbone));
+}(window.LoanApplication, Backbone.Marionette, Backbone));

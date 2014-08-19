@@ -1,6 +1,6 @@
-(function(ProsperApplication, M, B) {
+(function(LoanApplication, M, B) {
 
-  ProsperApplication.views.FormField = M.ItemView.extend({
+  LoanApplication.views.FormField = M.ItemView.extend({
     "tagName": "li",
     "template": (function() {
       var t;
@@ -13,4 +13,4 @@
     }())
   });
 
-}(window.ProsperApplication, Backbone.Marionette, Backbone));
+}(window.LoanApplication, Backbone.Marionette, Backbone));

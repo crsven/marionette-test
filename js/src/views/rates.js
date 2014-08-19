@@ -1,11 +1,11 @@
-(function(ProsperApplication, M, B, W) {
+(function(LoanApplication, M, B, W) {
 
-  ProsperApplication.views.Rates = M.CompositeView.extend({
+  LoanApplication.views.Rates = M.CompositeView.extend({
     "initialize": function() {
       this.collection = new B.Collection([]);
-      this.listenTo(ProsperApplication.app.vent, "rates:received", this._onRatesReceived);
+      this.listenTo(LoanApplication.app.vent, "rates:received", this._onRatesReceived);
     },
-    "itemView": ProsperApplication.views.Rate,
+    "itemView": LoanApplication.views.Rate,
     "itemViewContainer": "ul",
     "template": (function() {
       var t;
@@ -19,4 +19,4 @@
       this.collection.reset(rates);
     }
   });
-}(window.ProsperApplication, Backbone.Marionette, Backbone, Backbone.Wreqr));
+}(window.LoanApplication, Backbone.Marionette, Backbone, Backbone.Wreqr));

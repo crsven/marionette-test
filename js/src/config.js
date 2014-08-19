@@ -8,7 +8,7 @@
   };
 
   // set up the API client-app's namespace
-  window.ProsperApplication = {
+  window.LoanApplication = {
     "models": {},
     "collections": {},
     "views": {}
