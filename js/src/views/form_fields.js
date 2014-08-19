@@ -36,8 +36,6 @@
       $.post($form.attr('action'), serializedData)
         .done(function(response){
           LoanApplication.app.vent.trigger('rates:received', response);
-        }).fail(function(error) {
-          console.log('error');
         });
     },
   });

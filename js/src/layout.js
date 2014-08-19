@@ -4,7 +4,6 @@
     "className": "content",
     "onRender": function() {
       this.appForm.show(new LoanApplication.views.FormFields());
-      console.log(LoanApplication.views);
       this.appRates.show(new LoanApplication.views.Rates());
     },
     "regions": {
