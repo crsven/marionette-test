@@ -1,0 +1,14 @@
+{
+  "author": "Chris Svenningsen",
+  "name": "marionette-example",
+  "description": "trying out marionette",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "",
+    "chai": "",
+    "grunt": "",
+    "grunt-mocha": ""
+  }
+}
